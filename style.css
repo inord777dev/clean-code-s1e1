@@ -1,5 +1,5 @@
 /* Basic Style */
-body {
+.page {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
@@ -50,11 +50,11 @@ body {
 }
 
 .task,
-h3 {
+.title {
   list-style: none;
 }
 
-input,
+.task-input,
 .btn {
   outline: none;
 }
@@ -74,8 +74,8 @@ input,
 }
 
 /* Heading */
-h3,
-label[for="new-task"] {
+.title,
+.new-task__title {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -85,7 +85,8 @@ label[for="new-task"] {
   text-transform: uppercase;
 }
 
-input[type="text"] {
+.new-task__value,
+.task__value {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -98,12 +99,13 @@ input[type="text"] {
   color: #888;
 }
 
-input[type="text"]:focus {
+.new-task__value:focus,
+.task__value:focus {
   color: #333;
 }
 
 /* New Task */
-label[for="new-task"] {
+.new-task__title {
   display: block;
   margin: 0 0 20px;
 }
@@ -131,14 +133,14 @@ label[for="new-task"] {
   margin: 0 10px;
 }
 
-.task > label {
+.task__title {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-.task > input[type="text"] {
+.task__value {
   width: 226px;
 }
 
@@ -153,21 +155,21 @@ label[for="new-task"] {
 }
 
 /* Completed */
-#completed-tasks label {
+#completed-tasks .task__title {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-.task input[type=text] {
+.task .task__value {
   display: none;
 }
 
-.task.task_editable input[type=text] {
+.task.task_editable .task__value {
   display: inline-block;
   width: 224px;
 }
 
-.task.task_editable label {
+.task.task_editable .task__title {
   display: none;
 }

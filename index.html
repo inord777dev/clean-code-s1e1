@@ -5,7 +5,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
   </head>
-  <body>
+  <body class="page">
     <div class="header">
       <img class="header__img" src="./eisenhower-matrix.jpg">
       <a class="header__link"
@@ -15,37 +15,37 @@
       <p class="new-task">
         <label class="new-task__title" for="new-task">Add Item</label>
         <div class="new-task__wrap">
-          <input id="new-task" class="new-task__value task-content" type="text">
+          <input id="new-task" class="new-task__value task-content task-input" type="text">
           <button class="btn new-task__add">Add</button>
         </div>
       </p>
-      <h3>Todo</h3>
+      <h3 class="title">Todo</h3>
       <ul id="incomplete-tasks" class="tasks">
         <li class="task">
-          <input class="task__toogle" type="checkbox">
+          <input class="task__toogle task-input" type="checkbox">
           <label class="task__title task-content">Pay Bills</label>
-          <input class="task__value task-content" type="text">
+          <input class="task__value task-content task-input" type="text">
           <button class="btn task__btn-edit">Edit</button>
           <button class="btn task__btn-del">
             <img class="task__del-img" src="./remove.svg">
           </button>
         </li>
         <li class="task task_editable">
-          <input class="task__toogle" type="checkbox">
+          <input class="task__toogle task-input" type="checkbox">
           <label class="task__title task-content">Go Shopping</label>
-          <input class="task__value task-content" type="text" value="Go Shopping">
+          <input class="task__value task-content task-input" type="text" value="Go Shopping">
           <button class="btn task__btn-edit">Save</button>
           <button class="btn task__btn-del">
             <img class="task__del-img" src="./remove.svg">
           </button>
         </li>
       </ul>
-      <h3>Completed</h3>
+      <h3 class="title">Completed</h3>
       <ul id="completed-tasks" class="tasks">
         <li class="task">
-          <input class="task__toogle" type="checkbox" checked>
+          <input class="task__toogle task-input" type="checkbox" checked>
           <label class="task__title task-content">See the Doctor</label>
-          <input class="task__value task-content" type="text">
+          <input class="task__value task-content task-input" type="text">
           <button class="btn task__btn-edit">Edit</button>
           <button class="btn task__btn-del">
             <img class="task__del-img" src="./remove.svg">
